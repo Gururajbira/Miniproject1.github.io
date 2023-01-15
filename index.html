@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Used internal css  -->
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            margin-left: 10px;
+        }
+
+        body {
+            background-color: rgb(88, 52, 52);
+
+        }
+
+        body img {
+            margin-top: 50px;
+            border-radius: 20px;
+        }
+
+        body button {
+            margin-bottom: 100px;
+            background-color: orange;
+            border-radius: 10px;
+            padding: 2px;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Applied Two Buttons for change the text color -->
+
+    <button onclick="Orange()" style="background-color:orangered; font-size: 20px;">Go Orange</button>
+
+    <img src="./orange.jpeg" alt="Eyeclose" height="250px" width="250px" id="img">
+
+    <button onclick="Gray()" style="background-color: rgb(73, 71, 71); font-size: 20px">Go Gray </button>
+
+
+    <!-- Usnig internal javascript for changing the color of image -->
+
+    <script>
+
+        function Orange() {
+            document.getElementById('img').src = "./orange.jpeg";
+            document.getElementById('img').style.boxShadow = "10px 10px 8px black";
+            document.getElementById('img').style.height = '80vh';
+            document.getElementById('img').style.width = '80vw';
+
+        }
+
+        function Gray() {
+
+            document.getElementById('img').src = "./gray.jpeg";
+            document.getElementById('img').style.boxShadow = "10px 10px 8px black";
+            document.getElementById('img').style.height = '80vh';
+            document.getElementById('img').style.width = '80vw';
+
+        }
+    </script>
+</body>
+
+</html>
